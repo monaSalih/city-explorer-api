@@ -6,11 +6,6 @@ const brodCast = require('./assets/weather.json')
 const server = express();
 const PORT = process.env.PORT;
 server.use(cors());
-
-
-
-
-
 //localhost:3001/wetherCast?info=namede
 server.get('/wetherCast', (req, res) => {
     console.log(req.query,'info city');
@@ -18,7 +13,7 @@ server.get('/wetherCast', (req, res) => {
     console.log(brodCast,'brodCast info');
     let wetherData = brodCast.find(info => {
         // console.log(info.city_name,);
-        if (info.city_name.toLowerCase() === locaName.toLowerCase() ) {
+        if (info.city_name.toLowerCase() === locaName) {
         console.log(locaName,'local name result');
             return info;
         }
