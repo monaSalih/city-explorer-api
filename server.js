@@ -6,6 +6,7 @@ const brodCast = require('./assets/weather.json')
 const server = express();
 const PORT = process.env.PORT;
 server.use(cors());
+
 //localhost:3001/wetherCast?info=namede
 server.get('/wetherCast', (req, res) => {
     console.log(req.query,'info city');
@@ -20,6 +21,7 @@ server.get('/wetherCast', (req, res) => {
     })
     res.send(wetherData);
     // console.log(wetherData[0]);
+    ///test
 })
 
 server.get('*', (req, res) => {
