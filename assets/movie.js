@@ -9,12 +9,12 @@ let movieStore={}
 console.log(photoSlectRe);
 if (movieStore[photoSlectRe]!==undefined){
 
-    console.log('The data store in menory');
+    console.log('The data store in memory');
     res.send(movieStore[photoSlectRe])
 }else{
 
     try{
-        console.log('The data didn`t store yet in menory');
+        console.log('The data didn`t store yet in memory');
 
         axios.get(urlMovie).then(mapResult => {
                     // console.log(movieData.data);
