@@ -11,21 +11,6 @@ const axios = require('axios')
 // server.get('/photo', MoviePlayInCity)
 
 
-// class cityWeatherInfo {
-//     constructor(index) {
-//         this.date = index.valid_date;
-//         this.description = index.weather.description
-//     }
-// }
-
-// class showResultImage {
-//     constructor(dataStore) {
-//         this.movImage = dataStore.original_title
-//         this.title = dataStore.original_title
-//         this.moviePoster = `https://image.tmdb.org/t/p/w500${dataStore.poster_path}`
-
-//     }
-// }
 
 //localhost:3001/wetherCast?info=namede
 const getWeatherModul=require("./assets/weather")
